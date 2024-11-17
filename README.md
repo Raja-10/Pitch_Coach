@@ -29,7 +29,7 @@ This application helps in detecting and visualizing the pitch variations in a so
 - **myfunctions.py**: Contains utility functions for pitch detection, audio handling, and plot generation.
 - **kangal.wav**: A sample song file used for pitch detection.
 - **pitch_detection_report.pdf**: Report detailing the pitch detection process and system.
-- **Documentation/**: Automatically generated documentation using Sphinx.
+- **Documentation**: Automatically generated documentation using Sphinx.
 - **Raja.jpeg**: Image of Raja, the virtual vocal trainer in the app.
 
 
