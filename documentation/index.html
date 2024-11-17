@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Welcome to Pitch_coach’s documentation! &#8212; Pitch_coach 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=039e1c02" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=359c27e9"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="welcome-to-pitch-coach-s-documentation">
+<h1>Welcome to Pitch_coach’s documentation!<a class="headerlink" href="#welcome-to-pitch-coach-s-documentation" title="Permalink to this heading">¶</a></h1>
+</section>
+<section id="module-tool2">
+<span id="python-file-documentation"></span><h1>Python File Documentation<a class="headerlink" href="#module-tool2" title="Permalink to this heading">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="tool2.draw_button">
+<span class="sig-prename descclassname"><span class="pre">tool2.</span></span><span class="sig-name descname"><span class="pre">draw_button</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">window</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rect</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hover_color</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tool2.draw_button" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws a clickable button on the window.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>window (pygame.Surface): The pygame window to draw on.
+rect (pygame.Rect): The rectangle defining the button.
+text (str): The text displayed on the button.
+font (pygame.font.Font): The font to use for the text.
+color (tuple): RGB color of the button.
+hover_color (tuple): RGB color when hovered.
+text_color (tuple): RGB color of the text.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tool2.draw_gradient">
+<span class="sig-prename descclassname"><span class="pre">tool2.</span></span><span class="sig-name descname"><span class="pre">draw_gradient</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">window</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_top</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_bottom</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tool2.draw_gradient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws a vertical gradient on the window.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>window (pygame.Surface): The pygame window to draw on.
+color_top (tuple): RGB color for the top gradient.
+color_bottom (tuple): RGB color for the bottom gradient.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tool2.draw_pitch_detection_page">
+<span class="sig-prename descclassname"><span class="pre">tool2.</span></span><span class="sig-name descname"><span class="pre">draw_pitch_detection_page</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">window</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tool2.draw_pitch_detection_page" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws the pitch detection page on the provided Pygame window. This includes
+displaying the uploaded song’s name, a pitch detection plot, and a control 
+button for play/pause functionality.</p>
+<p>If pitch detection fails, an error message is displayed instead of the plot.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>window (pygame.Surface): The Pygame window surface where the elements are drawn.</p>
+</dd>
+<dt>Returns:</dt><dd><p>pygame.Rect or None: Returns the control button’s rectangle if the pitch plot is
+successfully drawn, otherwise returns None.</p>
+</dd>
+<dt>Elements:</dt><dd><ul class="simple">
+<li><p>Gradient Background: Draws a gradient background on the entire window.</p></li>
+<li><p>Song Name: Displays the name of the uploaded song.</p></li>
+<li><p>Pitch Plot: Displays the pitch detection plot if available.</p></li>
+<li><p>Play/Pause Control Button: Allows toggling playback of the uploaded song.</p></li>
+<li><p>Time Marker Line: Displays a red line representing the current playback time.</p></li>
+<li><p>Error Message: If pitch detection fails, an error message is displayed.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tool2.draw_title">
+<span class="sig-prename descclassname"><span class="pre">tool2.</span></span><span class="sig-name descname"><span class="pre">draw_title</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">window</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shadow_color</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tool2.draw_title" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws a title with shadow on the window.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>window (pygame.Surface): The pygame window to draw on.
+text (str): The title text.
+font (pygame.font.Font): The font to use.
+color (tuple): RGB color for the text.
+shadow_color (tuple): RGB color for the shadow.
+position (tuple): Position to center the title.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tool2.draw_train_page">
+<span class="sig-prename descclassname"><span class="pre">tool2.</span></span><span class="sig-name descname"><span class="pre">draw_train_page</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">window</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tool2.draw_train_page" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws the training page with a photo, introductory text, and an upload button.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>window (pygame.Surface): The pygame window to draw on.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tool2.toggle_playback">
+<span class="sig-prename descclassname"><span class="pre">tool2.</span></span><span class="sig-name descname"><span class="pre">toggle_playback</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tool2.toggle_playback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Toggles between playing and pausing the uploaded song.</p>
+<dl class="simple">
+<dt>Globals:</dt><dd><p>is_playing (bool): The playback state.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tool2.upload_song">
+<span class="sig-prename descclassname"><span class="pre">tool2.</span></span><span class="sig-name descname"><span class="pre">upload_song</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tool2.upload_song" title="Permalink to this definition">¶</a></dt>
+<dd><p>Opens a file dialog to upload a song and switches to pitch detection page.</p>
+<dl class="simple">
+<dt>Globals:</dt><dd><p>uploaded_song (str): The path of the uploaded song.
+current_page (str): The current page of the application.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<span class="target" id="module-myfunctions"></span><dl class="py function">
+<dt class="sig sig-object py" id="myfunctions.create_pause_button">
+<span class="sig-prename descclassname"><span class="pre">myfunctions.</span></span><span class="sig-name descname"><span class="pre">create_pause_button</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#myfunctions.create_pause_button" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a pause button surface.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>size (int): Size of the button.
+text_color (array): Colour of the text text_color (array): Colour of the text</p>
+</dd>
+<dt>Returns:</dt><dd><p>pygame.Surface: A surface containing the pause button.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myfunctions.create_play_button">
+<span class="sig-prename descclassname"><span class="pre">myfunctions.</span></span><span class="sig-name descname"><span class="pre">create_play_button</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#myfunctions.create_play_button" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a play button surface.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>size (int): Size of the button.
+text_color (array): Colour of the text</p>
+</dd>
+<dt>Returns:</dt><dd><p>pygame.Surface: A surface containing the play button.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myfunctions.create_random_plot">
+<span class="sig-prename descclassname"><span class="pre">myfunctions.</span></span><span class="sig-name descname"><span class="pre">create_random_plot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#myfunctions.create_random_plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a matplotlib plot of a noisy pitch signal.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>pygame.Surface: A surface with the rendered plot image.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myfunctions.detect_pitch">
+<span class="sig-prename descclassname"><span class="pre">myfunctions.</span></span><span class="sig-name descname"><span class="pre">detect_pitch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">song_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#myfunctions.detect_pitch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Detects the pitch of an audio file over time.</p>
+<p>Parameters:
+- song_path (str): Path to the audio file (MP3, WAV, etc.)</p>
+<p>Returns:
+- time_data (numpy array): Time in seconds for each pitch estimate.
+- pitch_data (numpy array): Detected pitch in Hz corresponding to each time.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myfunctions.get_realtime_pitch">
+<span class="sig-prename descclassname"><span class="pre">myfunctions.</span></span><span class="sig-name descname"><span class="pre">get_realtime_pitch</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#myfunctions.get_realtime_pitch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Captures real-time pitch data from the microphone.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>float: Detected pitch in Hz, or None if no pitch detected.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myfunctions.get_song_length">
+<span class="sig-prename descclassname"><span class="pre">myfunctions.</span></span><span class="sig-name descname"><span class="pre">get_song_length</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">song_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#myfunctions.get_song_length" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the length of a song in seconds.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>song_path (str): Path to the song file.</p>
+</dd>
+<dt>Returns:</dt><dd><p>float: Length of the song in seconds.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myfunctions.pitch_plot">
+<span class="sig-prename descclassname"><span class="pre">myfunctions.</span></span><span class="sig-name descname"><span class="pre">pitch_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">song_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#myfunctions.pitch_plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a pitch detection plot for a song.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>song_path (str): Path to the song file.</p>
+</dd>
+<dt>Returns:</dt><dd><p>pygame.Surface: A surface containing the plot image.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">Pitch_coach</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, Raja.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.1.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

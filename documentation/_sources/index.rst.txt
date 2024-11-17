@@ -1,0 +1,16 @@
+Welcome to Pitch_coach's documentation!
+=======================================
+
+Python File Documentation
+=========================
+
+
+.. automodule:: tool2
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: myfunctions
+   :members:
+   :undoc-members:
+   :show-inheritance:
