@@ -19,7 +19,22 @@ The application is built with `pygame` for the graphical interface and uses seve
 - `aubio` - For real-time pitch detection from microphone input.
 - `tkinter` - For file dialog to upload songs.
 - `pyaudio` - For microphone input streaming.
+## Real-Time Pitch Detection Application
+
+This application helps in detecting and visualizing the pitch variations in a song. It uses pitch detection algorithms to analyze both uploaded songs and real-time audio input from a microphone.
+
+## Files Structure
+
+- **tool2.py**: Main program to launch the application and handle the core logic.
+- **myfunctions.py**: Contains utility functions for pitch detection, audio handling, and plot generation.
+- **kangal.wav**: A sample song file used for pitch detection.
+- **pitch_detection_report.pdf**: Report detailing the pitch detection process and system.
+- **Documentation/**: Automatically generated documentation using Sphinx.
+- **Raja.jpeg**: Image of Raja, the virtual vocal trainer in the app.
+
 
 You can install the necessary dependencies using pip:
 ```bash
 pip install pygame numpy matplotlib librosa aubio pyaudio
+
+
