@@ -8,7 +8,6 @@ The application is built with `pygame` for the graphical interface and uses seve
 ## Features
 - **Real-time pitch detection**: Detects pitch from a live microphone input.
 - **Upload and play audio**: Users can upload an audio file (WAV format) to visualize its pitch detection over time.
-- **Interactive interface**: Displays dynamic pitch plots and provides controls for playback.
 - **Vocal training**: Provides an engaging interface for vocal pitch training and correction.
 
 ## Libraries and Dependencies
