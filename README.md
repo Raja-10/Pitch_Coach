@@ -1,39 +1,75 @@
+
 # Pitch Coach - Real-Time Pitch Detection Application
 
-## Overview
-Pitch Coach is a Python-based application designed to help users improve their vocal pitch accuracy. This tool detects and visualizes pitch in real-time, providing users with feedback based on their singing or spoken pitch. The system supports uploading audio files, detecting pitch variations over time, and visualizing the pitch in an interactive graphical interface.
-
-The application is built with `pygame` for the graphical interface and uses several libraries, including `librosa`, `aubio`, and `pygame.mixer`, for pitch detection and playback.
+## Project Description
+Pitch Coach is an interactive singing trainer application designed to analyze and provide feedback on vocal pitch in real-time. The application offers features like uploading a song for pitch detection, real-time pitch capture from a microphone, and visualizations of detected pitch data. Built with Python and Pygame, Pitch Coach provides an engaging interface for vocal practice and improvement.
 
 ## Features
-- **Real-time pitch detection**: Detects pitch from a live microphone input.
-- **Upload and play audio**: Users can upload an audio file (WAV format) to visualize its pitch detection over time.
-- **Vocal training**: Provides an engaging interface for vocal pitch training and correction.
+- **Real-Time Pitch Detection**: Capture and display pitch in real-time using your microphone.
+- **Upload and Analyze Songs**: Upload .wav files for pitch analysis and playback.
+- **Interactive GUI**: Modern, resizable interface with interactive buttons and feedback.
+- **Visualization**: View dynamic pitch graphs and playback progress markers.
 
-## Libraries and Dependencies
-- `pygame` - For GUI and audio playback.
-- `numpy` - For numerical operations.
-- `matplotlib` - For plotting the pitch data.
-- `librosa` - For audio processing and pitch detection.
-- `aubio` - For real-time pitch detection from microphone input.
-- `tkinter` - For file dialog to upload songs.
-- `pyaudio` - For microphone input streaming.
-## Real-Time Pitch Detection Application
+## How to Run the Project
 
-This application helps in detecting and visualizing the pitch variations in a song. It uses pitch detection algorithms to analyze both uploaded songs and real-time audio input from a microphone.
-
-## Files Structure
-
-- **tool2.py**: Main program to launch the application and handle the core logic.
-- **myfunctions.py**: Contains utility functions for pitch detection, audio handling, and plot generation.
-- **kangal.wav**: A sample song file used for pitch detection.
-- **pitch_detection_report.pdf**: Report detailing the pitch detection process and system.
-- **Documentation**: Automatically generated documentation using Sphinx.
-- **Raja.jpeg**: Image of Raja, the virtual vocal trainer in the app.
-
-
-You can install the necessary dependencies using pip:
+### Clone the Repository:
 ```bash
-pip install pygame numpy matplotlib librosa aubio pyaudio
+git clone https://github.com/your-repository-url
+cd pitch-coach
+```
+
+### Install Dependencies:
+Install the required Python libraries using requirements.txt:
+```bash
+pip install -r requirements.txt
+```
+
+### Run the Application:
+Execute the main.py script:
+```bash
+python main.py
+```
+
+## Dependencies
+This project uses the following Python libraries:
+- **pygame**: For GUI rendering and audio playback.
+- **matplotlib**: For generating pitch plots.
+- **aubio**: For real-time pitch detection.
+- **pyaudio**: For audio stream handling.
+- **tkinter**: For file dialog integration.
+- **numpy**: For numerical operations.
+- **librosa**: For audio analysis and pitch extraction.
+
+Install them via requirements.txt as shown in the How to Run section.
+
+## Usage Examples
+
+### Main Page
+- Launch the application.
+- Choose between:
+  - **Train**: Learn vocal techniques with feedback from Raja, your virtual trainer.
+  - **Play**: Upload a song for pitch analysis.
+
+### Train Page
+- View motivational text and dynamic pitch visualizations.
+- Use the Upload Song button to analyze your voice with a custom track.
+
+### Pitch Detection Page
+- Upload a .wav file.
+- View the pitch detection plot.
+- Use the play/pause button to control song playback.
+- Observe the red marker line indicating playback progress.
+
+## File Structure
+```bash
+pitch-coach/
+│
+├── main.py                   # Entry point for the application
+├── myfunctions.py            # Utility functions (playback controls, drawing helpers, pitch detection)
+├── requirements.txt          # External dependencies
+├── Raja.jpeg                 # Image for vocal trainer
+├── README.md                 # Project documentation
+└── realtime_pitch_detect.py  #Just using aubio library for real time detection
+```
 
 
